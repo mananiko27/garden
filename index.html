@@ -16,7 +16,7 @@
     header {
       display: flex;
       align-items: center;
-      justify-content: flex-start;
+      justify-content: space-between;
       padding: 1rem 2rem;
       position: fixed;
       top: 0;
@@ -27,22 +27,19 @@
 
     .logo {
       height: 90px;
-      margin-right: 2rem;
     }
 
     nav {
       display: flex;
-      align-items: center;
-      gap: 2.5rem;
-      margin-top: 12px;
+      flex-grow: 1;
+      justify-content: space-evenly;
+      margin-left: 2rem;
     }
 
     nav a {
-      display: inline-flex;
-      align-items: flex-end;
       text-decoration: none;
       color: #3aa47c;
-      font-size: 2.3rem;
+      font-size: 2.4rem;
       font-weight: bold;
       font-family: 'Dancing Script', cursive;
       white-space: nowrap;
@@ -56,17 +53,12 @@
     }
 
     nav a img.flower {
-      height: 18px;
-      width: auto;
+      height: 16px;
       position: absolute;
-      bottom: -5px;
-      left: 50%;
-      transform: translateX(-50%);
+      top: 0.7em;
+      left: 0.5em;
+      transform: translate(100%, -50%);
       pointer-events: none;
-    }
-
-    nav a:hover {
-      color: #2e7f6a;
     }
 
     .section {
@@ -88,11 +80,11 @@
   <header>
     <img src="logo.jpg" alt="mARTa logo" class="logo" />
     <nav>
-      <a href="#home"><span>Home<img src="pink_flower_transparent.png" class="flower" alt=""></span></a>
-      <a href="#marta"><span>mARTa<img src="yellow_flower_transparent.png" class="flower" alt=""></span></a>
-      <a href="#handmade"><span>Handmade<img src="teal_flower_transparent.png" class="flower" alt=""></span></a>
-      <a href="#workshops"><span>Workshop Corner<img src="pink_flower_transparent.png" class="flower" alt=""></span></a>
-      <a href="#contact"><span>Contact<img src="yellow_flower_transparent.png" class="flower" alt=""></span></a>
+      <a href="#home"><span>Ho<img src="pink_flower_transparent.png" class="flower" alt="">me</span></a>
+      <a href="#marta"><span>mA<img src="yellow_flower_transparent.png" class="flower" alt="">RTa</span></a>
+      <a href="#handmade"><span>Handm<img src="teal_flower_transparent.png" class="flower" alt="">ade</span></a>
+      <a href="#workshops"><span>Workshop<img src="pink_flower_transparent.png" class="flower" alt=""> Corner</span></a>
+      <a href="#contact"><span>Conta<img src="yellow_flower_transparent.png" class="flower" alt="">ct</span></a>
     </nav>
   </header>
 
