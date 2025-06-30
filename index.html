@@ -1,97 +1,84 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>mARTa Handcrafts</title>
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Georgia', serif;
-      color: white;
-      scroll-behavior: smooth;
-    }
-
-    header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 1rem 2rem;
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background: transparent;
-      z-index: 1000;
-    }
-
-    .logo {
-      height: 90px;
-    }
-
-    nav {
-      display: flex;
-      flex-grow: 1;
-      justify-content: space-evenly;
-      margin-left: 2rem;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: #3aa47c;
-      font-size: 2.4rem;
-      font-weight: bold;
-      font-family: 'Dancing Script', cursive;
-      white-space: nowrap;
-      transition: color 0.3s ease;
-      position: relative;
-    }
-
-    nav a span {
-      position: relative;
-      display: inline-block;
-    }
-
-    nav a img.flower {
-      height: 16px;
-      position: absolute;
-      top: 0.7em;
-      left: 0.5em;
-      transform: translate(100%, -50%);
-      pointer-events: none;
-    }
-
-    .section {
-      padding: 6rem 2rem 2rem;
-      min-height: 100vh;
-      background-size: cover;
-      background-attachment: fixed;
-      scroll-margin-top: 120px;
-    }
-
-    #home { background-image: url('texture.jpg'); }
-    #marta { background-image: url('texture2.jpg'); }
-    #handmade { background-image: url('texture.jpg'); }
-    #workshops { background-image: url('texture2.jpg'); }
-    #contact { background-image: url('texture.jpg'); }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>mARTa Handcrafts</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Brush Script MT', cursive;
+            font-size: 22px;
+        }
+        header {
+            background-image: url('texture.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 10px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo img {
+            height: 80px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 40px;
+            margin: 0;
+            padding: 0;
+        }
+        nav li {
+            display: flex;
+            align-items: center;
+        }
+        nav a {
+            text-decoration: none;
+            color: #2f4f4f;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        nav img {
+            height: 20px;
+            vertical-align: middle;
+        }
+        section {
+            min-height: 100vh;
+            padding: 40px;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        #home { background-image: url('texture.jpg'); }
+        #marta { background-image: url('texture2.jpg'); }
+        #handmade { background-image: url('texture.jpg'); }
+        #workshop { background-image: url('texture2.jpg'); }
+        #contact { background-image: url('texture.jpg'); }
+    </style>
 </head>
 <body>
-  <header>
-    <img src="logo.jpg" alt="mARTa logo" class="logo" />
-    <nav>
-      <a href="#home"><span>Ho<img src="pink_flower_transparent.png" class="flower" alt="">me</span></a>
-      <a href="#marta"><span>mA<img src="yellow_flower_transparent.png" class="flower" alt="">RTa</span></a>
-      <a href="#handmade"><span>Handm<img src="teal_flower_transparent.png" class="flower" alt="">ade</span></a>
-      <a href="#workshops"><span>Workshop<img src="pink_flower_transparent.png" class="flower" alt=""> Corner</span></a>
-      <a href="#contact"><span>Conta<img src="yellow_flower_transparent.png" class="flower" alt="">ct</span></a>
-    </nav>
-  </header>
-
-  <section id="home" class="section"></section>
-  <section id="marta" class="section"></section>
-  <section id="handmade" class="section"></section>
-  <section id="workshops" class="section"></section>
-  <section id="contact" class="section"></section>
+    <header>
+        <div class="logo">
+            <img src="logo.jpg" alt="mARTa logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home <img src="pink_flower.png" alt=""></a></li>
+                <li><a href="#marta">mARTa <img src="yellow_flower.png" alt=""></a></li>
+                <li><a href="#handmade">Handmade <img src="teal_flower.png" alt=""></a></li>
+                <li><a href="#workshop">Workshop Corner <img src="pink_flower.png" alt=""></a></li>
+                <li><a href="#contact">Contact <img src="yellow_flower.png" alt=""></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home"><h1>Home</h1></section>
+        <section id="marta"><h1>mARTa</h1></section>
+        <section id="handmade"><h1>Handmade</h1></section>
+        <section id="workshop"><h1>Workshop Corner</h1></section>
+        <section id="contact"><h1>Contact</h1></section>
+    </main>
 </body>
 </html>
