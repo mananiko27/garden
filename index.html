@@ -8,77 +8,75 @@
     <style>
         body {
             margin: 0;
-            font-family: 'Brush Script MT', cursive;
-            font-size: 22px;
-        }
-        header {
-            background-image: url('texture.jpg');
+            font-family: 'Georgia', serif;
+            background: url('texture.jpg') no-repeat center center fixed;
             background-size: cover;
-            background-repeat: no-repeat;
-            padding: 10px 30px;
+        }
+
+        header {
             display: flex;
             align-items: center;
             justify-content: space-between;
+            padding: 15px 40px;
         }
-        .logo img {
+
+        header img.logo {
             height: 80px;
         }
-        nav ul {
-            list-style: none;
+
+        nav {
             display: flex;
-            gap: 40px;
-            margin: 0;
-            padding: 0;
+            gap: 30px;
         }
-        nav li {
-            display: flex;
-            align-items: center;
-        }
-        nav a {
-            text-decoration: none;
+
+        .nav-link {
             color: #2f4f4f;
+            font-size: 22px;
+            text-decoration: none;
+            position: relative;
             display: flex;
             align-items: center;
             gap: 5px;
         }
-        nav img {
+
+        .nav-link img {
             height: 20px;
             vertical-align: middle;
         }
+
         section {
+            padding: 80px 40px;
             min-height: 100vh;
-            padding: 40px;
-            background-size: cover;
-            background-attachment: fixed;
         }
-        #home { background-image: url('texture.jpg'); }
-        #marta { background-image: url('texture2.jpg'); }
-        #handmade { background-image: url('texture.jpg'); }
-        #workshop { background-image: url('texture2.jpg'); }
-        #contact { background-image: url('texture.jpg'); }
+
+        #home { background: url('texture.jpg') no-repeat center center fixed; background-size: cover; }
+        #marta { background: url('texture2.jpg') no-repeat center center fixed; background-size: cover; }
+        #handmade { background: url('texture.jpg') no-repeat center center fixed; background-size: cover; }
+        #workshop { background: url('texture2.jpg') no-repeat center center fixed; background-size: cover; }
+        #contact { background: url('texture.jpg') no-repeat center center fixed; background-size: cover; }
+
+        h1 {
+            font-size: 36px;
+            color: #2f4f4f;
+        }
     </style>
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="logo.jpg" alt="mARTa logo">
-        </div>
+        <img src="logo.jpg" alt="mARTa logo" class="logo" />
         <nav>
-            <ul>
-                <li><a href="#home">Home <img src="pink_flower.png" alt=""></a></li>
-                <li><a href="#marta">mARTa <img src="yellow_flower.png" alt=""></a></li>
-                <li><a href="#handmade">Handmade <img src="teal_flower.png" alt=""></a></li>
-                <li><a href="#workshop">Workshop Corner <img src="pink_flower.png" alt=""></a></li>
-                <li><a href="#contact">Contact <img src="yellow_flower.png" alt=""></a></li>
-            </ul>
+            <a href="#home" class="nav-link">Home <img src="pink_flower.png" alt="flower"/></a>
+            <a href="#marta" class="nav-link">mARTa <img src="yellow_flower.png" alt="flower"/></a>
+            <a href="#handmade" class="nav-link">Handmade <img src="teal_flower.png" alt="flower"/></a>
+            <a href="#workshop" class="nav-link">Workshop Corner <img src="pink_flower.png" alt="flower"/></a>
+            <a href="#contact" class="nav-link">Contact <img src="yellow_flower.png" alt="flower"/></a>
         </nav>
     </header>
-    <main>
-        <section id="home"><h1>Home</h1></section>
-        <section id="marta"><h1>mARTa</h1></section>
-        <section id="handmade"><h1>Handmade</h1></section>
-        <section id="workshop"><h1>Workshop Corner</h1></section>
-        <section id="contact"><h1>Contact</h1></section>
-    </main>
+
+    <section id="home"><h1>Home</h1></section>
+    <section id="marta"><h1>mARTa</h1></section>
+    <section id="handmade"><h1>Handmade</h1></section>
+    <section id="workshop"><h1>Workshop Corner</h1></section>
+    <section id="contact"><h1>Contact</h1></section>
 </body>
 </html>
