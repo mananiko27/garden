@@ -2,81 +2,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>mARTa Handcrafts</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Georgia', serif;
-            background: url('texture.jpg') no-repeat center center fixed;
-            background-size: cover;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>mARTa Handcrafts</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Brush Script MT', cursive;
+      background: url('texture2.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
 
-        header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 15px 40px;
-        }
+    .navbar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30px 20px;
+      flex-wrap: wrap;
+    }
 
-        header img.logo {
-            height: 80px;
-        }
+    .navbar a {
+      text-decoration: none;
+      font-size: 28px;
+      color: #2e4a2e;
+      margin: 0 25px;
+      display: inline-flex;
+      align-items: center;
+    }
 
-        nav {
-            display: flex;
-            gap: 30px;
-        }
+    .flower-icon {
+      height: 20px;
+      width: auto;
+      margin-left: 6px;
+      vertical-align: middle;
+    }
 
-        .nav-link {
-            color: #2f4f4f;
-            font-size: 22px;
-            text-decoration: none;
-            position: relative;
-            display: flex;
-            align-items: center;
-            gap: 5px;
-        }
+    .logo {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      height: 70px;
+    }
 
-        .nav-link img {
-            height: 20px;
-            vertical-align: middle;
-        }
-
-        section {
-            padding: 80px 40px;
-            min-height: 100vh;
-        }
-
-        #home { background: url('texture.jpg') no-repeat center center fixed; background-size: cover; }
-        #marta { background: url('texture2.jpg') no-repeat center center fixed; background-size: cover; }
-        #handmade { background: url('texture.jpg') no-repeat center center fixed; background-size: cover; }
-        #workshop { background: url('texture2.jpg') no-repeat center center fixed; background-size: cover; }
-        #contact { background: url('texture.jpg') no-repeat center center fixed; background-size: cover; }
-
-        h1 {
-            font-size: 36px;
-            color: #2f4f4f;
-        }
-    </style>
+    section {
+      padding: 80px 20px;
+      text-align: center;
+      font-size: 36px;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <img src="logo.jpg" alt="mARTa logo" class="logo" />
-        <nav>
-            <a href="#home" class="nav-link">Home <img src="pink_flower.png" alt="flower"/></a>
-            <a href="#marta" class="nav-link">mARTa <img src="yellow_flower.png" alt="flower"/></a>
-            <a href="#handmade" class="nav-link">Handmade <img src="teal_flower.png" alt="flower"/></a>
-            <a href="#workshop" class="nav-link">Workshop Corner <img src="pink_flower.png" alt="flower"/></a>
-            <a href="#contact" class="nav-link">Contact <img src="yellow_flower.png" alt="flower"/></a>
-        </nav>
-    </header>
 
-    <section id="home"><h1>Home</h1></section>
-    <section id="marta"><h1>mARTa</h1></section>
-    <section id="handmade"><h1>Handmade</h1></section>
-    <section id="workshop"><h1>Workshop Corner</h1></section>
-    <section id="contact"><h1>Contact</h1></section>
+  <img src="logo.jpg" alt="mARTa logo" class="logo"/>
+
+  <nav class="navbar">
+    <a href="#home">Home <img src="pink_flower_transparent.png" alt="flower" class="flower-icon"/></a>
+    <a href="#marta">mARTa <img src="yellow_flower_transparent.png" alt="flower" class="flower-icon"/></a>
+    <a href="#handmade">Handmade <img src="teal_flower_transparent.png" alt="flower" class="flower-icon"/></a>
+    <a href="#workshop">Workshop Corner <img src="pink_flower_transparent.png" alt="flower" class="flower-icon"/></a>
+    <a href="#contact">Contact <img src="yellow_flower_transparent.png" alt="flower" class="flower-icon"/></a>
+  </nav>
+
+  <section id="home">Home</section>
+  <section id="marta">mARTa</section>
+  <section id="handmade">Handmade</section>
+  <section id="workshop">Workshop Corner</section>
+  <section id="contact">Contact</section>
+
 </body>
 </html>
