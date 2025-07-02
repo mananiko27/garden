@@ -3,71 +3,85 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>mARTa Handcrafts</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>mARTa Section</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Brush Script MT', cursive;
-      background: url('texture2.jpg') no-repeat center center fixed;
-      background-size: cover;
+      font-family: Georgia, serif;
+      background-image: url('texture2.jpg');
+      background-size: 105% 105%;
+      background-repeat: no-repeat;
+      background-position: center;
+      color: white;
+      padding: 4rem 2rem;
+      line-height: 1.8;
+      font-size: 1.2rem;
     }
 
-    .navbar {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 30px 20px;
-      flex-wrap: wrap;
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: transparent;
+      padding: 2rem 2.5rem;
     }
 
-    .navbar a {
-      text-decoration: none;
-      font-size: 28px;
-      color: #2e4a2e;
-      margin: 0 25px;
-      display: inline-flex;
-      align-items: center;
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      color: white;
+      font-family: 'Dancing Script', cursive;
     }
 
-    .flower-icon {
-      height: 20px;
-      width: auto;
-      margin-left: 6px;
-      vertical-align: middle;
+    p {
+      color: white;
+      margin-bottom: 2.5rem;
     }
 
-    .logo {
-      position: absolute;
-      top: 20px;
-      left: 20px;
-      height: 70px;
+    .inline-img {
+      width: 80px;
+      border-radius: 8px;
+      margin: 1rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
     }
 
-    section {
-      padding: 80px 20px;
-      text-align: center;
-      font-size: 36px;
-    }
+    .left { float: left; margin-right: 1.5rem; }
+    .right { float: right; margin-left: 1.5rem; }
+    .clear { clear: both; }
   </style>
 </head>
 <body>
+  <div class="container">
+    <h2>mARTa</h2>
+    <img src="25F9D484-9615-40A4-8C84-FE7818C4F1ED.jpeg" style="width: 200px; margin: 1rem 0;" alt="Girl with Balloon">
 
-  <img src="logo.jpg" alt="mARTa logo" class="logo"/>
+    <p>This space is born from love, devotion, and an eternal bond.
+    It is dedicated to my sweet, blissful, strong-minded, and deeply artistic daughter, Martha — eternally 8 years old.
+    She left behind a world of inspiration which lives on in every piece I create.</p>
+    <div class="clear"></div>
 
-  <nav class="navbar">
-    <a href="#home">Home <img src="pink_flower_transparent.png" alt="flower" class="flower-icon"/></a>
-    <a href="#marta">mARTa <img src="yellow_flower_transparent.png" alt="flower" class="flower-icon"/></a>
-    <a href="#handmade">Handmade <img src="teal_flower_transparent.png" alt="flower" class="flower-icon"/></a>
-    <a href="#workshop">Workshop Corner <img src="pink_flower_transparent.png" alt="flower" class="flower-icon"/></a>
-    <a href="#contact">Contact <img src="yellow_flower_transparent.png" alt="flower" class="flower-icon"/></a>
-  </nav>
+    <p><img src="sunflower.jpg" class="inline-img right" />
+    Her sense of color, shape, and beauty ran deep.
+    Her drawings, her crafts, her playful eye – all were inimitable.
+    Yet I dare and try, with her spirit in mind.</p>
+    <div class="clear"></div>
 
-  <section id="home">Home</section>
-  <section id="marta">mARTa</section>
-  <section id="handmade">Handmade</section>
-  <section id="workshop">Workshop Corner</section>
-  <section id="contact">Contact</section>
+    <p><img src="peach.jpg" class="inline-img left" />
+    This space isn’t about perfection.
+    It’s about imagination, joy and simple forms that radiate warmth, color and comfort.
+    It’s a little handmade world, simple and sincere, that speaks to anyone who still carries that childlike sense of wonder.</p>
+    <div class="clear"></div>
 
+    <p><img src="rainbow.jpg" class="inline-img right" />
+    Every piece in mARTa is crafted with care, heart, and a spark of childhood magic.
+    From Christmas trees in every shape and form, to vibrant flowers, to playful abstractions — these creations are lively, heartfelt, and full of emotions.</p>
+    <div class="clear"></div>
+
+    <p><img src="picasso.jpg" class="inline-img left" />
+    My hope is to create decorations that evoke new sensations, yet take you back — to joy, to memories, to that carefree feeling.
+    I hope what you find here can enlighten and enrich your eyesight, bring warmth to your heart and rekindle memories.</p>
+    <div class="clear"></div>
+  </div>
 </body>
 </html>
